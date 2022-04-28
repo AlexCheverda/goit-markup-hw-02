@@ -1,3 +1,93 @@
+:root {
+    --maim-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /*text color*/
+    --main-txt-cl: #ffffff;
+    --secondary-txt-cl: #757575;
+    --accent-cl: #2196F3;
+
+    /* background color */
+    --main-bg-cl: #E5E5E5;
+    --secondary-bg-cl: #F5F4FA;
+    --dark-bg-cl: #2F303A;
+}
+
 body {
-    background-color: #fff;
+    font-family: var(--maim-font);
+
+}
+
+.header {
+    background-color: #ffffff;
+}
+.link {
+    text-decoration: none;
+    font-family: var(--maim-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #212121;
+}
+.link-logo {
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+}
+
+.header-logo {
+    color: #000000;
+}
+.hero {
+    font-family: var(--maim-font);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-txt-cl);
+    background-color: var(--dark-bg-cl);
+}
+.btn {
+    font-family: var(--maim-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: var(--accent-cl);
+    color: #FFFFFF;
+}
+.footer {
+    background-color: var(--dark-bg-cl);
+}
+.footer-logo {
+    
+    color: #fff;
+}
+
+.list, .team-img, .team-card {
+    list-style: none;
+}
+
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.address {
+    font-family: var(--maim-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
