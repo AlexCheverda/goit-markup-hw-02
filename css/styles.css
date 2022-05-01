@@ -6,6 +6,7 @@
     --main-txt-cl: #000000;
     --secondary-txt-cl: #757575;
     --accent-cl: #2196F3;
+    --accent-btn-cl: #188CE8;
     --nav-cl: #212121;
     --hero-txt-cl: #ffffff;
 
@@ -95,7 +96,7 @@ body {
 }
 
 .btn {
-    font-family: var(--maim-font);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -109,7 +110,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-    background: #188CE8;
+    background: var(--accent-btn-cl);
 }
 
 /* Section */
@@ -182,8 +183,16 @@ ul {
     background-color: var(--accent-cl);
 }
 
+/* TEAM */
+
 .team {
     background-color: var(--secondary-bg-cl);
+}
+
+.team-card {
+    background-color: var(--hero-txt-cl);
+    width: 270px;
+    height: 368px;
 }
 
 /* Footer */
@@ -197,7 +206,6 @@ ul {
 
 .footer-group .contact-link {
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -210,7 +218,7 @@ ul {
 }
 
 .contact {
-    font-family: var(--maim-font);
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
