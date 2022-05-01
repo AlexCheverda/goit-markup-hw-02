@@ -15,19 +15,18 @@
     --dark-bg-cl: #2F303A;
 }
 
+/* Body */
+
 body {
-    font-family: var(--maim-font);
+    background-color: var(--hero-txt-cl);
     color: var(--main-txt-cl);
-    
+    font-family: var(--maim-font);
+      
 }
 
-.header {
-    background-color: #ffffff;
-}
+/* Header */
+
 .list .link {
-    text-decoration: none;
-    font-family: var(--maim-font);
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -46,10 +45,7 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.link-current {
-    text-decoration: none;
-    font-family: var(--maim-font);
-    font-style: normal;
+.link.current {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -58,15 +54,12 @@ body {
 }
 
 .header-group .contact-link {
-    text-decoration: none;
-    
-    font-family: var(--maim-font);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     
-    color: #757575;
+    color: var(--secondary-txt-cl);
 }
 
 .header-group .contact-link:hover,
@@ -77,23 +70,20 @@ body {
 .link-logo {
     text-decoration: none;
     font-family: var(--secondary-font);
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-cl);
 }
 
 .header-logo {
-    color: #000000;
-    
+    color: var(--main-txt-cl);
 }
 
 /* Hero */
 
 .hero {
-    font-family: var(--maim-font);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -111,72 +101,101 @@ body {
     line-height: 1.87;
     text-align: center;
     background-color: var(--accent-cl);
-    color: #FFFFFF;
+    color: var(--hero-txt-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-    visibility: hidden;
     background: #188CE8;
+}
+
+/* Section */
+
+.section-title, .proj-name {
+    color: var(--nav-cl);
+}
+
+.section-txt, .proj-type {
+    color: var(--secondary-txt-cl);
+}
+
+ul {
+    list-style: none;
 }
 
 /* Особенности */
 
 .about-name {
-    font-family: var(--maim-font);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
 }
 
 .about-txt {
-    font-family: var(--maim-font);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #757575;
 }
 
+/* Виды деятельности */
+
 .proj-name {
-    text-decoration: none;
-    font-family: var(--maim-font);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-
-    color: #212121;
 }
 
 .proj-type {
-    
-    font-family: var(--maim-font);
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-
-    color: #757575;
 }
 
-.proj-name {
-     list-style: none;
+.list-btn, .list a {
+    list-style: none;
+    text-decoration: none;
 }
+
+.list-btn button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--nav-cl);
+    background-color: var(--secondary-bg-cl);
+    border-radius: 4px;
+    border-color: var(--secondary-bg-cl);
+    cursor: pointer;
+}
+
+.list-btn button:hover,
+.list-btn button:focus {
+    color: var(--hero-txt-cl);
+    background-color: var(--accent-cl);
+}
+
+.team {
+    background-color: var(--secondary-bg-cl);
+}
+
+/* Footer */
 
 .footer {
     background-color: var(--dark-bg-cl);
 }
 .footer-logo {
-    color: #fff;
+    color: var(--hero-txt-cl);
 }
 
 .footer-group .contact-link {
-    text-decoration: none;
-    font-family: var(--maim-font);
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -190,15 +209,6 @@ body {
     color: var(--accent-cl);
 }
 
-.list, .team-img, .team-card {
-    list-style: none;
-}
-
-
-.team {
-    background-color: #F5F4FA;
-}
-
 .contact {
     font-family: var(--maim-font);
     font-style: normal;
@@ -206,7 +216,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: var(--hero-txt-cl);
 }
 
 .contact-link {
