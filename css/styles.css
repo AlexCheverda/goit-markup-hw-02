@@ -142,7 +142,7 @@ ul {
     list-style: none;
 }
 
-/* Особенности */
+/* Особливості */
 
 .list .about {
     font-weight: 700;
@@ -193,9 +193,9 @@ ul {
     color: var(--secondary-txt-cl);
 }
 
-/* ПОРТФОЛИО */
+/* ПОРТФОЛІО */
 
-/* Виды деятельности */
+/* Види діяльності */
 
 .proj-name {
     font-weight: 700;
